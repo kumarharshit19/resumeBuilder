@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Professional Resume Builder</h1>
+
+<div class="container">
+
+    <!-- FORM -->
+    <div class="form-section">
+        <h2>Fill Your Details</h2>
+
+        <label>Name</label>
+        <input type="text" id="name">
+
+        <label>Email</label>
+        <input type="email" id="email">
+
+        <label>Phone</label>
+        <input type="text" id="phone">
+
+        <label>LinkedIn</label>
+        <input type="text" id="linkedin">
+
+        <label>GitHub</label>
+        <input type="text" id="github">
+
+        <label>Summary</label>
+        <textarea id="summary"></textarea>
+
+        <label>Skills (use “;” for next bullet)</label>
+        <input type="text" id="skills">
+
+        <label>Experience (use “;” for next bullet)</label>
+        <textarea id="experience"></textarea>
+
+        <label>Projects (use “;” for next bullet)</label>
+        <textarea id="projects"></textarea>
+
+        <label>Education</label>
+        <textarea id="education"></textarea>
+
+        <button onclick="generateResume()">Generate Resume</button>
+    </div>
+
+    <!-- RESUME -->
+    <div class="resume-section" id="resume">
+        <p class="placeholder">Your professional resume will appear here.</p>
+    </div>
+
+</div>
+
+<button class="download-btn" onclick="window.print()">Download as PDF</button>
+
+<footer>
+    Made with ❤️ by <strong>Kumar Harshit</strong>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
